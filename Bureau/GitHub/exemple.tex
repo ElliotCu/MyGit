@@ -1,0 +1,129 @@
+\documentclass{article}
+
+\usepackage[T1]{fontenc} 
+\usepackage[utf8]{inputenc}
+\usepackage[francais]{babel}
+
+
+\title{First LateX Document}
+\author{WARDEH Amir}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Ceci est le résumé de l'article
+\end{abstract}
+
+\section{Première section}
+\subsection{Sous-section 1}
+Ceci est mon \textbf{premier} document en \LaTeX,
+écrit le \today{} en TP d’environnement de programmation,
+avec le mode « article ».
+\subsubsection{sous-sous section}
+Changement de la taille et de type:
+
+{\textbf{\emph{\large Ceci est mon \textbf{premier} document en \LaTeX,
+écrit le \today{} en TP d’environnement de programmation,
+avec le mode « article ».}}}
+\subsubsection {sous-sous section}
+\subsubsection{sous-sous section}
+\subsubsection{sous-sous section}
+
+\begin{itemize}
+\item item 1
+\item item 2
+\item item 3
+\end{itemize}
+
+
+\subsection{Sous-section 2}
+\section{Deuxième section}
+\subsubsection{sous-sous section}
+\subsubsection{sous-sous section}
+\subsubsection{sous-sous section}
+
+\begin{description}
+\item [new item 1] different item 1
+\item [new item 2] same item
+\item [new item 3] latex item
+\end{description}
+\subsubsection{sous-sous section}
+
+\begin{enumerate}
+\item myitem 1
+\item myitem 2
+\item myitem 3
+\end{enumerate}
+\section{Troisième section}
+
+\section{Résultats}
+\label{resultats}
+Les résultats sont préseentés dans la section~\ref{resultats}
+Le numéro de la page : \pageref{resultat}
+\tableofcontents
+\begin{thebibliography}{1}
+
+\bibitem{diday-1982}
+E.~Diday, J.~Lemaire, J.~Pouget, and F.~Testu.
+\newblock {\em \'El\'ements d'analyse de donn\'ees}.
+\newblock Dunod, 1982.
+
+\bibitem{heckbert-1982}
+P.~Heckbert.
+\newblock Color image quantization for frame buffer display.
+\newblock In {\em Proceedings of SIGGRAPH'82}, pages 297--307, 1982.
+
+\bibitem{preparata-1988}
+F.~Preparata and M.~I. Shamos.
+\newblock {\em Computational geometry, an introduction}.
+\newblock Springer-Verlag, 1988.
+
+\bibitem{tutte-1963}
+W.T. Tutte.
+\newblock A census of planar maps.
+\newblock {\em Canad.J.Math.}, 15:249--271, 1963.
+
+\end{thebibliography}
+
+Commande:
+\newcommand{\paire}[2]{(#1,#2)}
+\paire{1}{2}, \paire{2}{3}
+
+items spéciaux:
+{\renewcommand{\labelitemi}{$\heartsuit$}
+\begin{itemize}
+\item joli item1
+\item joli item2
+\end{itemize}
+
+\newcounter{compteur}
+\setcounter{compteur}{0}
+première valeur: \thecompteur\\
+\addtocounter{compteur}{1}
+deuxième valeur: \thecompteur\\
+
+\newenvironment{question}{\noindent{\Large \textbf{Question --}}}{Fin\\[.2cm]}
+\begin{question}
+première question
+\end{question}
+\begin{question}
+deuxième question
+\end{question}
+
+\section{Texte Mathématique}
+\Large{
+$
+z_{1} = \sqrt{$x_{1}^{2}$+$y_{1}^{2}$}
+$
+
+    
+$T(I) = \sum_{i=0}^{I} \frac{h(i)}{M}$
+    
+
+$X = \frac {\int_{\lambda min}^{\lambda max} E(\lambda) S(\lambda) \overline{x}(\lambda)d\lambda}{\int_{\lambda min}^{\lambda max}S(\lambda)\overline{y}(\lambda)d\lambda}$
+}
+
+\end{document}
+
